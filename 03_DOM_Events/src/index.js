@@ -63,3 +63,15 @@ renderHeader(bookStore);
 renderFooter(bookStore);
 bookStore.inventory.forEach(renderBook);
 
+
+const newBookBtn = document.querySelector('#toggleForm')
+newBookBtn.addEventListener('click', (event) => {
+  const form = document.querySelector('#book-form')
+  if (form.className === 'collapsed') {
+    form.classList.remove('collapsed')
+    newBookBtn.textContent = 'Collapse Form'
+  } else {
+    form.classList.add('collapsed')
+    newBookBtn.textContent = 'New Book'
+  }
+})
