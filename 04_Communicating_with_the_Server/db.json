@@ -28,7 +28,7 @@
   "books": [
     {
       "id": 1,
-      "title": "Eloquent JavaScript: A Modern Introduction to Programming",
+      "title": "My New Title",
       "author": "Marjin Haverbeke",
       "price": 10.00,
       "reviews": [

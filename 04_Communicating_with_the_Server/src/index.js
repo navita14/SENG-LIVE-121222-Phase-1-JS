@@ -1,3 +1,11 @@
+fetch('http://localhost:4444/books')
+    .then((resp) => resp.json())
+    .then((books) => {
+        books.forEach(renderBook)
+    })
+    .catch((event) => console.log(event))
+
+
 function formatPrice(price) {
   return '$' + Number.parseFloat(price).toFixed(2);
 }
@@ -125,7 +133,7 @@ bookForm.addEventListener('submit', (e) => {
 
 renderHeader(bookStore)
 renderFooter(bookStore)
-bookStore.inventory.forEach(renderBook)
+// bookStore.inventory.forEach(renderBook)
 
 
 
