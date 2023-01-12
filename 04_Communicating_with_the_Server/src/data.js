@@ -1,7 +1,4 @@
-const bookStore = {
-
-    
-
+const bookStore = {}
 
   location: "Seattle",
   address:'333 st ne Seattle wa 99999',
