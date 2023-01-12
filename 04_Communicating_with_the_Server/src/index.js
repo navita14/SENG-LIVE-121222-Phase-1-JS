@@ -1,9 +1,10 @@
 fetch('http://localhost:4444/books')
     .then((resp) => resp.json())
     .then((books) => {
+        console.log(books)
         books.forEach(renderBook)
     })
-    .catch((event) => console.log(event))
+    // .catch((event) => console.log(event))
 
 
 function formatPrice(price) {
@@ -41,6 +42,7 @@ function renderBook(book) {
   
   const h3 = document.createElement('h3');
   h3.textContent = book.title;
+  console.log(book.Title)
 
   const pAuthor = document.createElement('p');
   pAuthor.textContent = book.author;
