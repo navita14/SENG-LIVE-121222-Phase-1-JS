@@ -4,7 +4,7 @@ fetch('http://localhost:4444/books')
         console.log(books)
         books.forEach(renderBook)
     })
-    // .catch((event) => console.log(event))
+    .catch((event) => console.log(event))
 
 
 function formatPrice(price) {
